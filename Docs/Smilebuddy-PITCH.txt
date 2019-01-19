@@ -4,17 +4,18 @@ Smile Buddy (Alternate names- Funbud,Smilebuddy, Hellobuddy)
 
 1. Description
 
-
-Our app creates enhanced social experiences for those with autism 
-by translating the facial emotions into sensory stimuli. 
+Smilehelper creates enhanced social experiences for those with autism by translating the facial emotions into optimal sensory stimuli. 
 We use familiar imagery and familiar sounds that are associated with the corresponding emotion.
-The app user can grasp, feel and react to the emotions faster and better 
+The app user can grasp, feel and react to the emotions faster and better.
+ 
+We have a diverse team of developers, 3D modeler, Austism researcher and product manager.
 
+jsmentch@mit.edu erinpwoo@yahoo.com; clive.hg.lee@gmail.com; elio.pajares@gmail.com
 
 
 2. What real world problem is it solving
 
-It is hard for those with autism to connect with those around them and understand societal emotions and expressions. 
+It is challenging for those with autism to connect with those around them and understand societal emotions and expressions. 
 Hence they do not react accordingly. This results in diminished social experience and sometimes social alienation. 
 Our app solves this problem and increases sense of belonging for those with autism. 
 We are mainly targeting Austistic children. 
@@ -22,8 +23,7 @@ We are mainly targeting Austistic children.
 
 3. Future vision
 
-In future, we are aiming for customized translations thru 
-machine learning for amplified emotion translations and imagery representing child's familiar and favorite objects (Toys, legos). 
+In future, we are aiming for customized translations thru machine learning for amplified emotion translations and imagery representing child's familiar and favorite objects (Toys, legos). 
 
 
 
@@ -34,6 +34,9 @@ Here is a demonstration of our app
 
 5. Video  
 
+
+ELEVATOR PITCH: 
+Creates enhanced social experiences for Autistic people translating facial emotions into animated imagery & sounds.
 
 
 
