@@ -38,16 +38,11 @@ public class ResultsLabel : MonoBehaviour
     /// <summary>
     /// Set the Tags as Text of the last Label created. 
     /// </summary>
-    public void SetTagsToLastLabel(Dictionary<string, float> tagsDictionary)
+    public void SetTagsToLastLabel(string label)
     {
         lastLabelPlacedText = lastLabelPlaced.GetComponent<TextMesh>();
 
         // At this point we go through all the tags received and set them as text of the label
-        lastLabelPlacedText.text = "I see: \n";
-
-        foreach (KeyValuePair<string, float> tag in tagsDictionary)
-        {
-            lastLabelPlacedText.text += tag.Key + ", Confidence: " + tag.Value.ToString("0.00 \n");
-        }
+        lastLabelPlacedText.text = "I see: " + label;
     }
 }

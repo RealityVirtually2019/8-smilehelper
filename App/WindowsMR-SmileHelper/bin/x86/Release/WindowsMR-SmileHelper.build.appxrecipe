@@ -406,6 +406,9 @@
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\AudioPluginMsHRTF.dll">
+      <PackagePath>AudioPluginMsHRTF.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
     </AppxPackagedFile>
@@ -433,6 +436,9 @@
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\nativePlugins.txt">
+      <PackagePath>Data\nativePlugins.txt</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
@@ -448,74 +454,65 @@
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UIElementsModule.dll">
-      <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.SpriteMaskModule.dll">
-      <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.SharedInternalsModule.dll">
       <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.StyleSheetsModule.dll">
-      <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.SpriteMaskModule.dll">
+      <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.SpriteShapeModule.dll">
       <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UIModule.dll">
-      <PackagePath>UnityEngine.UIModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.StyleSheetsModule.dll">
+      <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.VRModule.dll">
-      <PackagePath>UnityEngine.VRModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.VideoModule.dll">
-      <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.VehiclesModule.dll">
-      <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.WindModule.dll">
-      <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.WebModule.dll">
-      <PackagePath>UnityEngine.WebModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UIElementsModule.dll">
+      <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityConnectModule.dll">
-      <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.VehiclesModule.dll">
+      <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityAnalyticsModule.dll">
-      <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.VideoModule.dll">
+      <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UNETModule.dll">
-      <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.VRModule.dll">
+      <PackagePath>UnityEngine.VRModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.WebModule.dll">
+      <PackagePath>UnityEngine.WebModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.WindModule.dll">
+      <PackagePath>UnityEngine.WindModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityWebRequestModule.dll">
-      <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UIModule.dll">
+      <PackagePath>UnityEngine.UIModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UNETModule.dll">
+      <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityAnalyticsModule.dll">
+      <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityConnectModule.dll">
+      <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityWebRequestModule.dll">
+      <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ClothModule.dll">
-      <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AudioModule.dll">
-      <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AssetBundleModule.dll">
-      <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
@@ -526,53 +523,62 @@
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ARModule.dll">
-      <PackagePath>UnityEngine.ARModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ClothModule.dll">
+      <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AnimationModule.dll">
-      <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AudioModule.dll">
+      <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AIModule.dll">
-      <PackagePath>UnityEngine.AIModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AssetBundleModule.dll">
+      <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AIModule.dll">
+      <PackagePath>UnityEngine.AIModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AnimationModule.dll">
+      <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ARModule.dll">
+      <PackagePath>UnityEngine.ARModule.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ParticleSystemModule.dll">
-      <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.PhysicsModule.dll">
-      <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.Physics2DModule.dll">
-      <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ParticleSystemModule.dll">
+      <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.Physics2DModule.dll">
+      <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.PhysicsModule.dll">
+      <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.GridModule.dll">
-      <PackagePath>UnityEngine.GridModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.InputModule.dll">
-      <PackagePath>UnityEngine.InputModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.GridModule.dll">
+      <PackagePath>UnityEngine.GridModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ImageConversionModule.dll">
+      <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ImageConversionModule.dll">
-      <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.InputModule.dll">
+      <PackagePath>UnityEngine.InputModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>

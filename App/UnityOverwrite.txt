@@ -5,12 +5,12 @@
 # Write a line equal to 'overwrite-all' (without quotes) to overwrite everything (preserved accross builds)
 # Write a line equal to 'keep-all' (without quotes) to keep files regardless their modification (preserved accross builds)
 # Default behavior is to never overwrite files
-WindowsMR-SmileHelper.sln: 935A1598F1304D3DB9C70F06AC38B649
+WindowsMR-SmileHelper.sln: 4051278C7763D0305385D05B1A65D843
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 1D02BC64BAC0D041019673A1C4C51737
 WindowsMR-SmileHelper\App.cs: 54667EE195093F6E64D1160D432B09BB
 WindowsMR-SmileHelper\Package.appxmanifest: F5E8A55B5371C2EC9EBB6AFF1CE3E984
 WindowsMR-SmileHelper\project.json: 1D02BC64BAC0D041019673A1C4C51737
-WindowsMR-SmileHelper\WindowsMR-SmileHelper.csproj: 3F121B355C08A0C0519571722C834134
+WindowsMR-SmileHelper\WindowsMR-SmileHelper.csproj: AB7ECE210666144114D754E4AB719BB4
 WindowsMR-SmileHelper\WindowsMR-SmileHelper.csproj.user: BEFB8AC4886C4CFDD3C68445D6F19B04
 WindowsMR-SmileHelper\Assets\SplashScreen.scale-200.png: A85C1D7624B6902CF8CEBD6F0200A826
 WindowsMR-SmileHelper\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084

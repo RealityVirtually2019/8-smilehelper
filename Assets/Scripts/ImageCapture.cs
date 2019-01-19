@@ -47,7 +47,63 @@ public class ImageCapture : MonoBehaviour {
             ResultsLabel.instance.CreateLabel();
 
             // Begins the image capture and analysis procedure
-            //ExecuteImageCaptureAndAnalysis();
+            ExecuteImageCaptureAndAnalysis();
         }
+    }
+
+    /// <summary>
+    /// Register the full execution of the Photo Capture. If successful, it will begin 
+    /// the Image Analysis process.
+    /// </summary>
+    void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
+    {
+        // Call StopPhotoMode once the image has successfully captured
+        photoCaptureObject.StopPhotoModeAsync(OnStoppedPhotoMode);
+    }
+
+    void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
+    {
+        // Dispose from the object in memory and request the image analysis 
+        // to the VisionManager class
+        photoCaptureObject.Dispose();
+        photoCaptureObject = null;
+        StartCoroutine(VisionManager.instance.AnalyseLastImageCaptured());
+    }
+
+    /// <summary>    
+    /// Begin process of Image Capturing and send To Azure     
+    /// Computer Vision service.   
+    /// </summary>    
+    private void ExecuteImageCaptureAndAnalysis()
+    {
+        // Set the camera resolution to be the highest possible    
+        Resolution cameraResolution = PhotoCapture.SupportedResolutions.OrderByDescending((res) => res.width * res.height).First();
+
+        Texture2D targetTexture = new Texture2D(cameraResolution.width, cameraResolution.height);
+
+        // Begin capture process, set the image format    
+        PhotoCapture.CreateAsync(false, delegate (PhotoCapture captureObject)
+        {
+            photoCaptureObject = captureObject;
+            CameraParameters camParameters = new CameraParameters();
+            camParameters.hologramOpacity = 0.0f;
+            camParameters.cameraResolutionWidth = targetTexture.width;
+            camParameters.cameraResolutionHeight = targetTexture.height;
+            camParameters.pixelFormat = CapturePixelFormat.BGRA32;
+
+            // Capture the image from the camera and save it in the App internal folder    
+            captureObject.StartPhotoModeAsync(camParameters, delegate (PhotoCapture.PhotoCaptureResult result)
+            {
+                string filename = string.Format(@"CapturedImage{0}.jpg", tapsCount);
+
+                string filePath = Path.Combine(Application.persistentDataPath, filename);
+
+                VisionManager.instance.imagePath = filePath;
+
+                photoCaptureObject.TakePhotoAsync(filePath, PhotoCaptureFileOutputFormat.JPG, OnCapturedPhotoToDisk);
+
+                currentlyCapturing = false;
+            });
+        });
     }
 }

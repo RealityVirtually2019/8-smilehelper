@@ -28,9 +28,10 @@ public class VisionManager : MonoBehaviour {
     public static VisionManager instance;
 
     // you must insert your service key here!    
-    private string authorizationKey = "- Insert your key here -";
+    private string authorizationKey = "d503595ddaca483f8215296698c12f00";
     private const string ocpApimSubscriptionKeyHeader = "Ocp-Apim-Subscription-Key";
-    private string visionAnalysisEndpoint = "https://eastus.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Tags";   // This is where you need to update your endpoint, if you set your location to something other than west-us.
+    private string visionAnalysisEndpoint =
+        "https://eastus.api.cognitive.microsoft.com/face/v1.0/detect?overload=stream&returnFaceAttributes=emotion";   // This is where you need to update your endpoint, if you set your location to something other than west-us.
 
     internal byte[] imageBytes;
 
@@ -84,24 +85,9 @@ public class VisionManager : MonoBehaviour {
                 // The response will be in Json format
                 // therefore it needs to be deserialized into the classes AnalysedObject and TagData
                 AnalysedObject analysedObject = new AnalysedObject();
-                analysedObject = JsonUtility.FromJson<AnalysedObject>(jsonResponse);
 
-                if (analysedObject.tags == null)
-                {
-                    Debug.Log("analysedObject.tagData is null");
-                }
-                else
-                {
-                    Dictionary<string, float> tagsDictionary = new Dictionary<string, float>();
-
-                    foreach (TagData td in analysedObject.tags)
-                    {
-                        TagData tag = td as TagData;
-                        tagsDictionary.Add(tag.name, tag.confidence);
-                    }
-
-                    ResultsLabel.instance.SetTagsToLastLabel(tagsDictionary);
-                }
+                ResultsLabel.instance.SetTagsToLastLabel(jsonResponse.ToString());
+                
             }
             catch (Exception exception)
             {
@@ -121,4 +107,12 @@ public class VisionManager : MonoBehaviour {
         BinaryReader binaryReader = new BinaryReader(fileStream);
         return binaryReader.ReadBytes((int)fileStream.Length);
     }
+}
+
+/// <summary>
+/// The Person Face object
+/// </summary>
+public class Face_RootObject
+{
+    public string faceId { get; set; }
 }
