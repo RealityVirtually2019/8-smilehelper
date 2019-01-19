@@ -5,22 +5,32 @@ using UnityEngine;
 
 public class TriggerEvents : MonoBehaviour {
 
-    public interface ICustomMessageTarget : IEventSystemHandler
-    {
-        // functions that can be called via the messaging system
-        void TestMessage1();
-    }
+    public GameObject sphere = GameObject.FindGameObjectWithTag("Sphere");
+    public GameObject model = GameObject.FindGameObjectWithTag("Model");
+    public GameObject cube = GameObject.FindGameObjectWithTag("Cube");
 
-
-    //anything extending ICustomMessageTarget can implement custom behavior upon receiving message.
-   
-    public class MessageTarget1 : MonoBehaviour, ICustomMessageTarget
+    public void OnCollisionEnter(Collision obj)
     {
-        public void TestMessage1()
+        if (obj.gameObject == sphere)
         {
-            Debug.Log("Message Received");
+            sphere.GetComponent<Renderer>().enabled = false;
+            model.GetComponent<Renderer>().enabled = true;
+            cube.GetComponent<Renderer>().enabled = true;
+        }
+        if (obj.gameObject == model)
+        {
+            sphere.GetComponent<Renderer>().enabled = true;
+            model.GetComponent<Renderer>().enabled = false;
+            cube.GetComponent<Renderer>().enabled = true;
+        }
+        if (obj.gameObject == cube)
+        {
+            sphere.GetComponent<Renderer>().enabled = true;
+            model.GetComponent<Renderer>().enabled = true;
+            cube.GetComponent<Renderer>().enabled = false;
         }
     }
+
 }
 
 //this code will execute the function TestMessage1 on any components on the GameObject target that implement the ICustomMessageTarget interface
