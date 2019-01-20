@@ -14,11 +14,29 @@ public class ImageCapture : MonoBehaviour {
     private PhotoCapture photoCaptureObject = null;
     private GestureRecognizer recognizer;
     private bool currentlyCapturing = false;
+<<<<<<< HEAD
+=======
+    public GameObject currentObj;
+>>>>>>> parent of f843d87... Trigger sound and delete text after 8 seconds
 
     private void Awake()
     {
         // Allows this instance to behave like a singleton
         instance = this;
+<<<<<<< HEAD
+=======
+    }
+
+    public void SetSoundObject(GameObject obj)
+    {
+        currentObj = obj;
+    }
+
+    public void PlaySound(GameObject obj)
+    {
+        AudioSource audio = obj.GetComponent<AudioSource>();
+        audio.Play();
+>>>>>>> parent of f843d87... Trigger sound and delete text after 8 seconds
     }
 
     void Start()
@@ -48,6 +66,12 @@ public class ImageCapture : MonoBehaviour {
 
             // Begins the image capture and analysis procedure
             ExecuteImageCaptureAndAnalysis();
+<<<<<<< HEAD
+=======
+
+            //CUSTOM TRIGGER EVENTS HERE:
+            PlaySound(currentObj);
+>>>>>>> parent of f843d87... Trigger sound and delete text after 8 seconds
         }
     }
 

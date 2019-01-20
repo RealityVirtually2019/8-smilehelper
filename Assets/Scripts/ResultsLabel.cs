@@ -43,6 +43,10 @@ public class ResultsLabel : MonoBehaviour
         lastLabelPlacedText = lastLabelPlaced.GetComponent<TextMesh>();
 
         // At this point we go through all the tags received and set them as text of the label
+<<<<<<< HEAD
         lastLabelPlacedText.text = "I see: " + label;
+=======
+        lastLabelPlacedText.text = label;
+>>>>>>> parent of f843d87... Trigger sound and delete text after 8 seconds
     }
 }

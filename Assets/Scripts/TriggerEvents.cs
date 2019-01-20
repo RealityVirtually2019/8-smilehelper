@@ -30,8 +30,19 @@ public class TriggerEvents : MonoBehaviour {
             cube.GetComponent<Renderer>().enabled = false;
         }
     }
+<<<<<<< HEAD
 
 }
 
 //this code will execute the function TestMessage1 on any components on the GameObject target that implement the ICustomMessageTarget interface
 //ExecuteEvents.Execute<ICustomMessageTarget>(target, null, (x,y)=>x.Message1());
+=======
+
+    public void OnCollisionEnter(Collision obj)
+    {
+        SetSoundObject(obj.gameObject);
+        Debug.Log("Collision with " + obj);
+    }
+
+}
+>>>>>>> parent of f843d87... Trigger sound and delete text after 8 seconds

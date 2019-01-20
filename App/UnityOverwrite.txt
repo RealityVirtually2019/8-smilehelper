@@ -10,8 +10,13 @@ GeneratedProjects\UWP\Assembly-CSharp\project.json: 1D02BC64BAC0D041019673A1C4C5
 WindowsMR-SmileHelper\App.cs: 54667EE195093F6E64D1160D432B09BB
 WindowsMR-SmileHelper\Package.appxmanifest: F5E8A55B5371C2EC9EBB6AFF1CE3E984
 WindowsMR-SmileHelper\project.json: 1D02BC64BAC0D041019673A1C4C51737
+<<<<<<< HEAD
 WindowsMR-SmileHelper\WindowsMR-SmileHelper.csproj: AB7ECE210666144114D754E4AB719BB4
 WindowsMR-SmileHelper\WindowsMR-SmileHelper.csproj.user: BEFB8AC4886C4CFDD3C68445D6F19B04
+=======
+WindowsMR-SmileHelper\WindowsMR-SmileHelper.csproj: 13601A59C89D63B83C5B35F5EF0D814E
+WindowsMR-SmileHelper\WindowsMR-SmileHelper.csproj.user: modified
+>>>>>>> parent of f843d87... Trigger sound and delete text after 8 seconds
 WindowsMR-SmileHelper\Assets\SplashScreen.scale-200.png: A85C1D7624B6902CF8CEBD6F0200A826
 WindowsMR-SmileHelper\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084
 WindowsMR-SmileHelper\Assets\Square44x44Logo.scale-200.png: 6C6EF27184ABE9D870A9D564953775DE
