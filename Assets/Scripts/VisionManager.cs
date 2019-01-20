@@ -11,6 +11,10 @@ using Newtonsoft.Json;
 
 public class VisionManager : MonoBehaviour {
 
+
+    public AudioClip happy;
+    public AudioClip sad;
+
     [System.Serializable]
     public class TagData
     {
@@ -103,7 +107,22 @@ public class VisionManager : MonoBehaviour {
                         //Debug.Log($"Detected emotion {emotion} and confidence {emotions[emotion]}");
                     }
                     outputLabel = $"{prominentEmotion}";
+                   
+                        
+                    AudioSource audio = GetComponent<AudioSource>();
+                    
+                    if (prominentEmotion == "happiness")
+                    {
+                        audio.clip = happy;
+                    } else
+                    {
+                        audio.clip = sad;
+                    }
+                    audio.Play();
                 }
+
+                
+
                 ResultsLabel.instance.SetTagsToLastLabel(outputLabel);
             }
             catch (Exception exception)
