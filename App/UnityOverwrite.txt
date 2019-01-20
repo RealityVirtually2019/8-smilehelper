@@ -5,25 +5,22 @@
 # Write a line equal to 'overwrite-all' (without quotes) to overwrite everything (preserved accross builds)
 # Write a line equal to 'keep-all' (without quotes) to keep files regardless their modification (preserved accross builds)
 # Default behavior is to never overwrite files
-WindowsMR-SmileHelper.sln: modified
+WindowsMR-SmileHelper.sln: 4051278C7763D0305385D05B1A65D843
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 1D02BC64BAC0D041019673A1C4C51737
 WindowsMR-SmileHelper\App.cs: 54667EE195093F6E64D1160D432B09BB
-WindowsMR-SmileHelper\Package.appxmanifest: E5B4424F926F965B854ABA86FEDFFB75
+WindowsMR-SmileHelper\Package.appxmanifest: F5E8A55B5371C2EC9EBB6AFF1CE3E984
 WindowsMR-SmileHelper\project.json: 1D02BC64BAC0D041019673A1C4C51737
-WindowsMR-SmileHelper\WindowsMR-SmileHelper.csproj: C829AA65C3045BF4FF2B3CE905A7759F
+<<<<<<< HEAD
+WindowsMR-SmileHelper\WindowsMR-SmileHelper.csproj: AB7ECE210666144114D754E4AB719BB4
+WindowsMR-SmileHelper\WindowsMR-SmileHelper.csproj.user: BEFB8AC4886C4CFDD3C68445D6F19B04
+=======
+WindowsMR-SmileHelper\WindowsMR-SmileHelper.csproj: 13601A59C89D63B83C5B35F5EF0D814E
 WindowsMR-SmileHelper\WindowsMR-SmileHelper.csproj.user: modified
+>>>>>>> parent of f843d87... Trigger sound and delete text after 8 seconds
 WindowsMR-SmileHelper\Assets\SplashScreen.scale-200.png: A85C1D7624B6902CF8CEBD6F0200A826
 WindowsMR-SmileHelper\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084
 WindowsMR-SmileHelper\Assets\Square44x44Logo.scale-200.png: 6C6EF27184ABE9D870A9D564953775DE
 WindowsMR-SmileHelper\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: 156637F7B5363E983E7A46D8E533A23D
 WindowsMR-SmileHelper\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
 WindowsMR-SmileHelper\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
-WindowsMR-SmileHelper\bin\x86\Release\AppX\Assets\SplashScreen.scale-200.png: A85C1D7624B6902CF8CEBD6F0200A826
-WindowsMR-SmileHelper\bin\x86\Release\AppX\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084
-WindowsMR-SmileHelper\bin\x86\Release\AppX\Assets\Square44x44Logo.scale-200.png: 6C6EF27184ABE9D870A9D564953775DE
-WindowsMR-SmileHelper\bin\x86\Release\AppX\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: 156637F7B5363E983E7A46D8E533A23D
-WindowsMR-SmileHelper\bin\x86\Release\AppX\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
-WindowsMR-SmileHelper\bin\x86\Release\AppX\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
-WindowsMR-SmileHelper\bin\x86\Release\AppX\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
-WindowsMR-SmileHelper\obj\x86\Release\WindowsMR-SmileHelper.csproj.CopyComplete: D41D8CD98F00B204E9800998ECF8427E
 WindowsMR-SmileHelper\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826

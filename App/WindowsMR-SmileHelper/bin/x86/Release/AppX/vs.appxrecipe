@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\bin\x86\Release\AppX</LayoutDir>
-    <RegisteredManifestChecksum>8B87E57E0A11D43D739E01AC36985F97B6A1DEABA14B07C8C32BAA7EC4D9CC56</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>3694102A0C6C8422BE287850A1ABF25998DCEEDE339ED71C6996639749716D6F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>WindowsMR-SmileHelper_1.0.0.0_x86__pzq3xp76mxafg</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>WindowsMR-SmileHelper_pzq3xp76mxafg!App</RegisteredUserModeAppID>
     <RegisteredPackageID>WindowsMR-SmileHelper</RegisteredPackageID>
@@ -30,13 +30,21 @@
     <AppXManifest Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-01-20T04:11:17.463</Modified>
+<<<<<<< HEAD
+      <Modified>2019-01-20T00:03:05.484</Modified>
+=======
+      <Modified>2019-01-20T01:54:48.246</Modified>
+>>>>>>> parent of f843d87... Trigger sound and delete text after 8 seconds
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\bin\x86\Release\WindowsMR-SmileHelper.exe">
       <PackagePath>entrypoint\WindowsMR-SmileHelper.exe</PackagePath>
-      <Modified>2019-01-20T04:11:06.075</Modified>
+<<<<<<< HEAD
+      <Modified>2019-01-20T00:02:53.571</Modified>
+=======
+      <Modified>2019-01-20T01:54:37.123</Modified>
+>>>>>>> parent of f843d87... Trigger sound and delete text after 8 seconds
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -464,7 +472,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Unprocessed\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2018-05-17T00:07:44.000</Modified>
+      <Modified>2019-01-19T14:39:55.114</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityEngineProxy.dll">
       <PackagePath>UnityEngineProxy.dll</PackagePath>
@@ -504,7 +512,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2019-01-20T03:15:40.161</Modified>
+<<<<<<< HEAD
+      <Modified>2019-01-19T17:47:33.366</Modified>
+=======
+      <Modified>2019-01-20T01:40:22.490</Modified>
+>>>>>>> parent of f843d87... Trigger sound and delete text after 8 seconds
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -546,15 +558,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
-      <Modified>2019-01-20T03:14:54.100</Modified>
+<<<<<<< HEAD
+      <Modified>2019-01-19T17:46:49.401</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2019-01-20T03:14:53.514</Modified>
+      <Modified>2019-01-19T17:46:48.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2019-01-20T03:14:52.226</Modified>
+      <Modified>2019-01-19T17:46:47.589</Modified>
+=======
+      <Modified>2019-01-20T01:39:35.114</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\globalgamemanagers">
+      <PackagePath>Data\globalgamemanagers</PackagePath>
+      <Modified>2019-01-20T01:39:34.560</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\level0">
+      <PackagePath>Data\level0</PackagePath>
+      <Modified>2019-01-20T01:39:33.220</Modified>
+>>>>>>> parent of f843d87... Trigger sound and delete text after 8 seconds
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
@@ -562,31 +586,51 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2019-01-20T03:14:54.095</Modified>
+<<<<<<< HEAD
+      <Modified>2019-01-19T17:46:49.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2019-01-20T03:14:53.636</Modified>
+      <Modified>2019-01-19T17:46:48.983</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2019-01-20T03:14:53.777</Modified>
+      <Modified>2019-01-19T17:46:49.088</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-      <Modified>2019-01-20T03:14:52.222</Modified>
+      <Modified>2019-01-19T17:46:47.585</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2019-01-20T03:15:40.100</Modified>
+      <Modified>2019-01-19T17:47:33.272</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2019-01-20T03:15:40.103</Modified>
+      <Modified>2019-01-19T17:47:33.274</Modified>
+=======
+      <Modified>2019-01-20T01:39:35.109</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\sharedassets0.resource">
-      <PackagePath>Data\sharedassets0.resource</PackagePath>
-      <Modified>2019-01-20T03:14:53.784</Modified>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\globalgamemanagers.assets">
+      <PackagePath>Data\globalgamemanagers.assets</PackagePath>
+      <Modified>2019-01-20T01:39:34.688</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\sharedassets0.assets">
+      <PackagePath>Data\sharedassets0.assets</PackagePath>
+      <Modified>2019-01-20T01:39:34.795</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\level0.resS">
+      <PackagePath>Data\level0.resS</PackagePath>
+      <Modified>2019-01-20T01:39:33.217</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\managedAssemblies.txt">
+      <PackagePath>Data\managedAssemblies.txt</PackagePath>
+      <Modified>2019-01-20T01:40:22.374</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Data\nativePlugins.txt">
+      <PackagePath>Data\nativePlugins.txt</PackagePath>
+      <Modified>2019-01-20T01:40:22.376</Modified>
+>>>>>>> parent of f843d87... Trigger sound and delete text after 8 seconds
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -594,223 +638,443 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-01-20T03:48:37.500</Modified>
+<<<<<<< HEAD
+      <Modified>2019-01-20T00:02:54.564</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.144</Modified>
+      <Modified>2019-01-20T00:03:03.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.175</Modified>
+      <Modified>2019-01-20T00:03:03.257</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.196</Modified>
+      <Modified>2019-01-20T00:03:03.274</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.230</Modified>
+      <Modified>2019-01-20T00:03:03.298</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.SharedInternalsModule.dll">
       <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.259</Modified>
+      <Modified>2019-01-20T00:03:03.319</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.284</Modified>
+      <Modified>2019-01-20T00:03:03.336</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.SpriteShapeModule.dll">
       <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.305</Modified>
+      <Modified>2019-01-20T00:03:03.352</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.331</Modified>
+      <Modified>2019-01-20T00:03:03.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.387</Modified>
+      <Modified>2019-01-20T00:03:03.422</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.409</Modified>
+      <Modified>2019-01-20T00:03:03.441</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.429</Modified>
+      <Modified>2019-01-20T00:03:03.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.453</Modified>
+      <Modified>2019-01-20T00:03:03.482</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.492</Modified>
+      <Modified>2019-01-20T00:03:03.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.517</Modified>
+      <Modified>2019-01-20T00:03:03.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.536</Modified>
+      <Modified>2019-01-20T00:03:03.574</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.553</Modified>
+      <Modified>2019-01-20T00:03:03.590</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.578</Modified>
+      <Modified>2019-01-20T00:03:03.613</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.638</Modified>
+      <Modified>2019-01-20T00:03:03.644</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.667</Modified>
+      <Modified>2019-01-20T00:03:03.664</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.692</Modified>
+      <Modified>2019-01-20T00:03:03.683</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.710</Modified>
+      <Modified>2019-01-20T00:03:03.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.746</Modified>
+      <Modified>2019-01-20T00:03:03.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.765</Modified>
+      <Modified>2019-01-20T00:03:03.742</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.785</Modified>
+      <Modified>2019-01-20T00:03:03.761</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.804</Modified>
+      <Modified>2019-01-20T00:03:03.779</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.125</Modified>
+      <Modified>2019-01-20T00:03:04.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.146</Modified>
+      <Modified>2019-01-20T00:03:04.073</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.173</Modified>
+      <Modified>2019-01-20T00:03:04.109</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AssetBundleModule.dll">
       <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.191</Modified>
+      <Modified>2019-01-20T00:03:04.126</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.209</Modified>
+      <Modified>2019-01-20T00:03:04.143</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.233</Modified>
+      <Modified>2019-01-20T00:03:04.167</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.272</Modified>
+      <Modified>2019-01-20T00:03:04.199</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.296</Modified>
+      <Modified>2019-01-20T00:03:04.225</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2019-01-20T03:15:16.181</Modified>
+      <Modified>2019-01-19T17:47:10.343</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.317</Modified>
+      <Modified>2019-01-20T00:03:04.246</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.358</Modified>
+      <Modified>2019-01-20T00:03:04.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.375</Modified>
+      <Modified>2019-01-20T00:03:04.301</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.406</Modified>
+      <Modified>2019-01-20T00:03:04.345</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.434</Modified>
+      <Modified>2019-01-20T00:03:04.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.451</Modified>
+      <Modified>2019-01-20T00:03:04.390</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.476</Modified>
+      <Modified>2019-01-20T00:03:04.416</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.494</Modified>
+      <Modified>2019-01-20T00:03:04.434</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.512</Modified>
+      <Modified>2019-01-20T00:03:04.450</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.558</Modified>
+      <Modified>2019-01-20T00:03:04.485</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.577</Modified>
+      <Modified>2019-01-20T00:03:04.502</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.634</Modified>
+      <Modified>2019-01-20T00:03:04.553</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.696</Modified>
+      <Modified>2019-01-20T00:03:04.611</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.796</Modified>
+      <Modified>2019-01-20T00:03:04.713</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.SpatialTracking.dll">
       <PackagePath>UnityEngine.SpatialTracking.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.816</Modified>
+      <Modified>2019-01-20T00:03:04.732</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.848</Modified>
+      <Modified>2019-01-20T00:03:04.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.StandardEvents.dll">
       <PackagePath>UnityEngine.StandardEvents.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.882</Modified>
+      <Modified>2019-01-20T00:03:04.792</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2019-01-20T04:11:16.970</Modified>
+      <Modified>2019-01-20T00:03:04.877</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2019-01-20T04:11:15.109</Modified>
+      <Modified>2019-01-20T00:03:03.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\bin\x86\Release\Core\WindowsMR-SmileHelper.exe">
       <PackagePath>WindowsMR-SmileHelper.exe</PackagePath>
-      <Modified>2019-01-20T04:11:17.459</Modified>
+      <Modified>2019-01-20T00:03:05.480</Modified>
+=======
+      <Modified>2019-01-20T01:41:11.158</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.TilemapModule.dll">
+      <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.122</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.TextRenderingModule.dll">
+      <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.147</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.TerrainPhysicsModule.dll">
+      <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.164</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.TerrainModule.dll">
+      <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.187</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.SharedInternalsModule.dll">
+      <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.207</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.SpriteMaskModule.dll">
+      <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.224</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.SpriteShapeModule.dll">
+      <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.240</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.StyleSheetsModule.dll">
+      <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.262</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UIElementsModule.dll">
+      <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.310</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityWebRequestWWWModule.dll">
+      <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.330</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.VehiclesModule.dll">
+      <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.348</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.VideoModule.dll">
+      <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.374</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.VRModule.dll">
+      <PackagePath>UnityEngine.VRModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.408</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.WebModule.dll">
+      <PackagePath>UnityEngine.WebModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.437</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.WindModule.dll">
+      <PackagePath>UnityEngine.WindModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.455</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityWebRequestTextureModule.dll">
+      <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.473</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UIModule.dll">
+      <PackagePath>UnityEngine.UIModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.494</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UNETModule.dll">
+      <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.522</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityAnalyticsModule.dll">
+      <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.543</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityConnectModule.dll">
+      <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.561</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityWebRequestAudioModule.dll">
+      <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.578</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UnityWebRequestModule.dll">
+      <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.604</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ScreenCaptureModule.dll">
+      <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.621</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.DirectorModule.dll">
+      <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.638</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.CrashReportingModule.dll">
+      <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.655</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.CoreModule.dll">
+      <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.949</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ClothModule.dll">
+      <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.968</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AudioModule.dll">
+      <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.995</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AssetBundleModule.dll">
+      <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.012</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AccessibilityModule.dll">
+      <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.029</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AIModule.dll">
+      <PackagePath>UnityEngine.AIModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.052</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.AnimationModule.dll">
+      <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.088</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ARModule.dll">
+      <PackagePath>UnityEngine.ARModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.111</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.dll">
+      <PackagePath>UnityEngine.dll</PackagePath>
+      <Modified>2019-01-20T01:39:57.980</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ParticlesLegacyModule.dll">
+      <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.132</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ParticleSystemModule.dll">
+      <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.170</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.PerformanceReportingModule.dll">
+      <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.189</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.Physics2DModule.dll">
+      <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.234</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.PhysicsModule.dll">
+      <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.267</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.JSONSerializeModule.dll">
+      <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.284</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.GameCenterModule.dll">
+      <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.311</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.GridModule.dll">
+      <PackagePath>UnityEngine.GridModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.335</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.ImageConversionModule.dll">
+      <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.353</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.IMGUIModule.dll">
+      <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.395</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.InputModule.dll">
+      <PackagePath>UnityEngine.InputModule.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.414</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.Timeline.dll">
+      <PackagePath>UnityEngine.Timeline.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.466</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\nunit.framework.dll">
+      <PackagePath>nunit.framework.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.531</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.UI.dll">
+      <PackagePath>UnityEngine.UI.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.624</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.SpatialTracking.dll">
+      <PackagePath>UnityEngine.SpatialTracking.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.643</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.HoloLens.dll">
+      <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.673</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.StandardEvents.dll">
+      <PackagePath>UnityEngine.StandardEvents.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.703</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\UnityEngine.Networking.dll">
+      <PackagePath>UnityEngine.Networking.dll</PackagePath>
+      <Modified>2019-01-20T01:54:47.786</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\Assembly-CSharp.dll">
+      <PackagePath>Assembly-CSharp.dll</PackagePath>
+      <Modified>2019-01-20T01:54:46.069</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hyung\Documents\GitHub\smilehelper\App\WindowsMR-SmileHelper\bin\x86\Release\Core\WindowsMR-SmileHelper.exe">
+      <PackagePath>WindowsMR-SmileHelper.exe</PackagePath>
+      <Modified>2019-01-20T01:54:48.241</Modified>
+>>>>>>> parent of f843d87... Trigger sound and delete text after 8 seconds
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

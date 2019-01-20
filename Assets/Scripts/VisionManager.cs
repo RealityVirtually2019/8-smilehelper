@@ -50,13 +50,26 @@ public class VisionManager : MonoBehaviour {
         instance = this;
     }
 
-    public IEnumerator AnalyzeImage(byte[] image)
+    // Use this for initialization
+    void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+
+    /// <summary>
+    /// Call the Computer Vision Service to submit the image.
+    /// </summary>
+    public IEnumerator AnalyseLastImageCaptured()
     {
         WWWForm webForm = new WWWForm();
         using (UnityWebRequest unityWebRequest = UnityWebRequest.Post(visionAnalysisEndpoint, webForm))
         {
             // gets a byte array out of the saved image
-            imageBytes = image;
+            imageBytes = GetImageAsByteArray(imagePath);
             unityWebRequest.SetRequestHeader("Content-Type", "application/octet-stream");
             unityWebRequest.SetRequestHeader(ocpApimSubscriptionKeyHeader, authorizationKey);
 
@@ -82,8 +95,8 @@ public class VisionManager : MonoBehaviour {
 
                 // The response will be in Json format
                 // therefore it needs to be deserialized into the classes AnalysedObject and TagData
-
-                Debug.Log("Json payload" + jsonResponse.ToString());
+                
+                Debug.Log(jsonResponse.ToString());
                 List<string> facesIdList = new List<string>();
                 Face_RootObject[] face_RootObject =
                     JsonConvert.DeserializeObject<Face_RootObject[]>(jsonResponse);
@@ -93,23 +106,17 @@ public class VisionManager : MonoBehaviour {
                 {
                     Dictionary<string, object> face = JsonConvert.DeserializeObject<Dictionary<string, object>>(face_RootObject[0].faceAttributes.ToString());
                     Dictionary<string, double> emotions = JsonConvert.DeserializeObject<Dictionary<string, double>>(face["emotion"].ToString());
-
-                    string prominentEmotion = null;
-                    double prominentEmotionConf = 0f;
-
+                    
                     foreach (string emotion in emotions.Keys)
                     {
-                        double currentEmotionConf = emotions[emotion];
-                        if (currentEmotionConf >= prominentEmotionConf)
-                        {
-                            prominentEmotion = emotion;
-                            prominentEmotionConf = currentEmotionConf;
-                        }
+                        string emotionConf = emotions[emotion].ToString();
+                        outputLabel += " " + emotion + ": " + emotionConf;
 
-                        //Debug.Log($"Detected emotion {emotion} and confidence {emotions[emotion]}");
+                        Debug.Log($"Detected emotion {emotion} and confidence {emotions[emotion]}");
                     }
                     outputLabel = $"{prominentEmotion}";
                     mainEmotion = new Emotion(prominentEmotion, prominentEmotionConf);
+
                 }
                 ResultsLabel.instance.SetTagsToLastLabel(outputLabel);
 
@@ -134,5 +141,15 @@ public class VisionManager : MonoBehaviour {
 
             yield return null;
         }
+    }
+
+    /// <summary>
+    /// Returns the contents of the specified file as a byte array.
+    /// </summary>
+    private static byte[] GetImageAsByteArray(string imageFilePath)
+    {
+        FileStream fileStream = new FileStream(imageFilePath, FileMode.Open, FileAccess.Read);
+        BinaryReader binaryReader = new BinaryReader(fileStream);
+        return binaryReader.ReadBytes((int)fileStream.Length);
     }
 }

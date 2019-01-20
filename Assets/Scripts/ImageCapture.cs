@@ -14,20 +14,29 @@ public class ImageCapture : MonoBehaviour {
     private PhotoCapture photoCaptureObject = null;
     private GestureRecognizer recognizer;
     private bool currentlyCapturing = false;
-    public GameObject buddyObj;
+<<<<<<< HEAD
+=======
+    public GameObject currentObj;
+>>>>>>> parent of f843d87... Trigger sound and delete text after 8 seconds
 
     private void Awake()
     {
         // Allows this instance to behave like a singleton
         instance = this;
+<<<<<<< HEAD
+=======
+    }
 
-        buddyObj = GameObject.Find("Buddy");
+    public void SetSoundObject(GameObject obj)
+    {
+        currentObj = obj;
     }
 
     public void PlaySound(GameObject obj)
     {
         AudioSource audio = obj.GetComponent<AudioSource>();
         audio.Play();
+>>>>>>> parent of f843d87... Trigger sound and delete text after 8 seconds
     }
 
     void Start()
@@ -57,22 +66,22 @@ public class ImageCapture : MonoBehaviour {
 
             // Begins the image capture and analysis procedure
             ExecuteImageCaptureAndAnalysis();
+<<<<<<< HEAD
+=======
 
             //CUSTOM TRIGGER EVENTS HERE:
-            PlaySound(buddyObj);
+            PlaySound(currentObj);
+>>>>>>> parent of f843d87... Trigger sound and delete text after 8 seconds
         }
     }
 
-    void OnCapturePhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame frame)
+    /// <summary>
+    /// Register the full execution of the Photo Capture. If successful, it will begin 
+    /// the Image Analysis process.
+    /// </summary>
+    void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
     {
-        //frame.GetUnsafePointerToBuffer()
-        if (result.success)
-        {
-            List<byte> buffer = new List<byte>();
-            buffer.Clear();
-            frame.CopyRawImageDataIntoBuffer(buffer);
-            StartCoroutine(VisionManager.instance.AnalyzeImage(buffer.ToArray()));
-        }
+        // Call StopPhotoMode once the image has successfully captured
         photoCaptureObject.StopPhotoModeAsync(OnStoppedPhotoMode);
     }
 
@@ -82,6 +91,7 @@ public class ImageCapture : MonoBehaviour {
         // to the VisionManager class
         photoCaptureObject.Dispose();
         photoCaptureObject = null;
+        StartCoroutine(VisionManager.instance.AnalyseLastImageCaptured());
     }
 
     /// <summary>    
@@ -91,10 +101,8 @@ public class ImageCapture : MonoBehaviour {
     private void ExecuteImageCaptureAndAnalysis()
     {
         // Set the camera resolution to be the highest possible
-        IEnumerable<Resolution> resolutions = PhotoCapture.SupportedResolutions.OrderByDescending((res) => res.width * res.height);
-        int numAvailableRes = resolutions.Count();
-        Resolution cameraResolution = resolutions.Skip(numAvailableRes/2).First(); //get a medium resolution
-            //.Last(); //lowest resolution for fastest resoponse. use .First() for highest
+        Resolution cameraResolution = PhotoCapture.SupportedResolutions.OrderByDescending((res) => res.width * res.height)
+            .Last(); //lowest resolution for fastest resoponse. use .First() for highest
         
         Texture2D targetTexture = new Texture2D(cameraResolution.width, cameraResolution.height);
 
@@ -106,12 +114,18 @@ public class ImageCapture : MonoBehaviour {
             camParameters.hologramOpacity = 0.0f;
             camParameters.cameraResolutionWidth = targetTexture.width;
             camParameters.cameraResolutionHeight = targetTexture.height;
-            camParameters.pixelFormat = CapturePixelFormat.JPEG;
-    
+            camParameters.pixelFormat = CapturePixelFormat.BGRA32;
+
             // Capture the image from the camera and save it in the App internal folder    
             captureObject.StartPhotoModeAsync(camParameters, delegate (PhotoCapture.PhotoCaptureResult result)
             {
-                photoCaptureObject.TakePhotoAsync(OnCapturePhotoToMemory);
+                string filename = string.Format(@"CapturedImage{0}.jpg", tapsCount);
+
+                string filePath = Path.Combine(Application.persistentDataPath, filename);
+
+                VisionManager.instance.imagePath = filePath;
+
+                photoCaptureObject.TakePhotoAsync(filePath, PhotoCaptureFileOutputFormat.JPG, OnCapturedPhotoToDisk);
 
                 currentlyCapturing = false;
             });
