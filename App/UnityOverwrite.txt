@@ -10,7 +10,7 @@ GeneratedProjects\UWP\Assembly-CSharp\project.json: 1D02BC64BAC0D041019673A1C4C5
 WindowsMR-SmileHelper\App.cs: 54667EE195093F6E64D1160D432B09BB
 WindowsMR-SmileHelper\Package.appxmanifest: E5B4424F926F965B854ABA86FEDFFB75
 WindowsMR-SmileHelper\project.json: 1D02BC64BAC0D041019673A1C4C51737
-WindowsMR-SmileHelper\WindowsMR-SmileHelper.csproj: C829AA65C3045BF4FF2B3CE905A7759F
+WindowsMR-SmileHelper\WindowsMR-SmileHelper.csproj: 26C86054FC66B473551371980FA72680
 WindowsMR-SmileHelper\WindowsMR-SmileHelper.csproj.user: modified
 WindowsMR-SmileHelper\Assets\SplashScreen.scale-200.png: A85C1D7624B6902CF8CEBD6F0200A826
 WindowsMR-SmileHelper\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084
