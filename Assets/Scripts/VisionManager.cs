@@ -7,9 +7,12 @@ using System.Collections.Generic;
 using UnityEngine.Networking;
 using Newtonsoft.Json;
 
-
-
 public class VisionManager : MonoBehaviour {
+
+
+    //make sure to assign clips in assets to parameters in inspector
+    public AudioClip happyclip;
+    public AudioClip sadclip;
 
     [System.Serializable]
     public class TagData
@@ -27,6 +30,9 @@ public class VisionManager : MonoBehaviour {
     }
 
     public static VisionManager instance;
+
+    //MAIN EMOTION
+    public Emotion mainEmotion;
 
     // you must insert your service key here!    
     private string authorizationKey = "d503595ddaca483f8215296698c12f00";
@@ -103,8 +109,23 @@ public class VisionManager : MonoBehaviour {
                         //Debug.Log($"Detected emotion {emotion} and confidence {emotions[emotion]}");
                     }
                     outputLabel = $"{prominentEmotion}";
+                    mainEmotion = new Emotion(prominentEmotion, prominentEmotionConf);
                 }
                 ResultsLabel.instance.SetTagsToLastLabel(outputLabel);
+
+                AudioSource src = GetComponent<AudioSource>();
+
+                //PLAY SOUND
+                if (mainEmotion.emotion == "happiness")
+                {
+                    src.clip = happyclip;
+                } 
+                if (mainEmotion.emotion == "sadness")
+                {
+                    src.clip = sadclip;
+                }
+
+                src.Play();
             }
             catch (Exception exception)
             {
