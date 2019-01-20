@@ -44,16 +44,13 @@ public class VisionManager : MonoBehaviour {
         instance = this;
     }
 
-    /// <summary>
-    /// Call the Computer Vision Service to submit the image.
-    /// </summary>
-    public IEnumerator AnalyseLastImageCaptured()
+    public IEnumerator AnalyzeImage(byte[] image)
     {
         WWWForm webForm = new WWWForm();
         using (UnityWebRequest unityWebRequest = UnityWebRequest.Post(visionAnalysisEndpoint, webForm))
         {
             // gets a byte array out of the saved image
-            imageBytes = GetImageAsByteArray(imagePath);
+            imageBytes = image;
             unityWebRequest.SetRequestHeader("Content-Type", "application/octet-stream");
             unityWebRequest.SetRequestHeader(ocpApimSubscriptionKeyHeader, authorizationKey);
 
@@ -79,7 +76,7 @@ public class VisionManager : MonoBehaviour {
 
                 // The response will be in Json format
                 // therefore it needs to be deserialized into the classes AnalysedObject and TagData
-                
+
                 Debug.Log("Json payload" + jsonResponse.ToString());
                 List<string> facesIdList = new List<string>();
                 Face_RootObject[] face_RootObject =
@@ -116,15 +113,5 @@ public class VisionManager : MonoBehaviour {
 
             yield return null;
         }
-    }
-
-    /// <summary>
-    /// Returns the contents of the specified file as a byte array.
-    /// </summary>
-    private static byte[] GetImageAsByteArray(string imageFilePath)
-    {
-        FileStream fileStream = new FileStream(imageFilePath, FileMode.Open, FileAccess.Read);
-        BinaryReader binaryReader = new BinaryReader(fileStream);
-        return binaryReader.ReadBytes((int)fileStream.Length);
     }
 }
