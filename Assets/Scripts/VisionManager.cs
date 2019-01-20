@@ -44,16 +44,6 @@ public class VisionManager : MonoBehaviour {
         instance = this;
     }
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
     /// <summary>
     /// Call the Computer Vision Service to submit the image.
     /// </summary>
@@ -90,7 +80,7 @@ public class VisionManager : MonoBehaviour {
                 // The response will be in Json format
                 // therefore it needs to be deserialized into the classes AnalysedObject and TagData
                 
-                Debug.Log(jsonResponse.ToString());
+                Debug.Log("Json payload" + jsonResponse.ToString());
                 List<string> facesIdList = new List<string>();
                 Face_RootObject[] face_RootObject =
                     JsonConvert.DeserializeObject<Face_RootObject[]>(jsonResponse);
@@ -113,7 +103,7 @@ public class VisionManager : MonoBehaviour {
                             prominentEmotionConf = currentEmotionConf;
                         }
 
-                        Debug.Log($"Detected emotion {emotion} and confidence {emotions[emotion]}");
+                        //Debug.Log($"Detected emotion {emotion} and confidence {emotions[emotion]}");
                     }
                     outputLabel = $"{prominentEmotion}";
                 }

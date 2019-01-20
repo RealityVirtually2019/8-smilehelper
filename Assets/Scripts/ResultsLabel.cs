@@ -43,6 +43,6 @@ public class ResultsLabel : MonoBehaviour
         lastLabelPlacedText = lastLabelPlaced.GetComponent<TextMesh>();
 
         // At this point we go through all the tags received and set them as text of the label
-        lastLabelPlacedText.text = "I see: " + label;
+        lastLabelPlacedText.text = label;
     }
 }

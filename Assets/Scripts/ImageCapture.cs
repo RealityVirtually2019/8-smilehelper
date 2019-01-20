@@ -56,7 +56,7 @@ public class ImageCapture : MonoBehaviour {
             tapsCount++;
 
             // Create a label in world space using the ResultsLabel class
-            //ResultsLabel.instance.CreateLabel();
+            ResultsLabel.instance.CreateLabel();
 
             // Begins the image capture and analysis procedure
             ExecuteImageCaptureAndAnalysis();
