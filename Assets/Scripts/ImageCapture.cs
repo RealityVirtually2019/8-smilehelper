@@ -14,11 +14,23 @@ public class ImageCapture : MonoBehaviour {
     private PhotoCapture photoCaptureObject = null;
     private GestureRecognizer recognizer;
     private bool currentlyCapturing = false;
+    public GameObject currentObj;
 
     private void Awake()
     {
         // Allows this instance to behave like a singleton
         instance = this;
+    }
+
+    public void SetSoundObject(GameObject obj)
+    {
+        currentObj = obj;
+    }
+
+    public void PlaySound(GameObject obj)
+    {
+        AudioSource audio = obj.GetComponent<AudioSource>();
+        audio.Play();
     }
 
     void Start()
@@ -44,10 +56,13 @@ public class ImageCapture : MonoBehaviour {
             tapsCount++;
 
             // Create a label in world space using the ResultsLabel class
-            ResultsLabel.instance.CreateLabel();
+            //ResultsLabel.instance.CreateLabel();
 
             // Begins the image capture and analysis procedure
             ExecuteImageCaptureAndAnalysis();
+
+            //CUSTOM TRIGGER EVENTS HERE:
+            PlaySound(currentObj);
         }
     }
 
