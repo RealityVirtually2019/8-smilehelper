@@ -100,14 +100,22 @@ public class VisionManager : MonoBehaviour {
                 {
                     Dictionary<string, object> face = JsonConvert.DeserializeObject<Dictionary<string, object>>(face_RootObject[0].faceAttributes.ToString());
                     Dictionary<string, double> emotions = JsonConvert.DeserializeObject<Dictionary<string, double>>(face["emotion"].ToString());
-                    
+
+                    string prominentEmotion = null;
+                    double prominentEmotionConf = 0f;
+
                     foreach (string emotion in emotions.Keys)
                     {
-                        string emotionConf = emotions[emotion].ToString();
-                        outputLabel += " " + emotion + ": " + emotionConf;
+                        double currentEmotionConf = emotions[emotion];
+                        if (currentEmotionConf >= prominentEmotionConf)
+                        {
+                            prominentEmotion = emotion;
+                            prominentEmotionConf = currentEmotionConf;
+                        }
 
                         Debug.Log($"Detected emotion {emotion} and confidence {emotions[emotion]}");
                     }
+                    outputLabel = $"{prominentEmotion}";
                 }
                 ResultsLabel.instance.SetTagsToLastLabel(outputLabel);
             }

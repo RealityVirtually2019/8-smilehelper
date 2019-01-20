@@ -78,7 +78,8 @@ public class ImageCapture : MonoBehaviour {
     {
         // Set the camera resolution to be the highest possible
         Resolution cameraResolution = PhotoCapture.SupportedResolutions.OrderByDescending((res) => res.width * res.height)
-            .Last(); //lowest resolution for fastest resoponse. use .First() for highest
+            .First();
+            //.Last(); //lowest resolution for fastest resoponse. use .First() for highest
         
         Texture2D targetTexture = new Texture2D(cameraResolution.width, cameraResolution.height);
 
