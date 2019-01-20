@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System.Linq;
-using UnityEngine;
 using UnityEngine.XR.WSA.Input;
 using UnityEngine.XR.WSA.WebCam;
+
 
 public class ImageCapture : MonoBehaviour {
 
@@ -76,9 +76,10 @@ public class ImageCapture : MonoBehaviour {
     /// </summary>    
     private void ExecuteImageCaptureAndAnalysis()
     {
-        // Set the camera resolution to be the highest possible    
-        Resolution cameraResolution = PhotoCapture.SupportedResolutions.OrderByDescending((res) => res.width * res.height).First();
-
+        // Set the camera resolution to be the highest possible
+        Resolution cameraResolution = PhotoCapture.SupportedResolutions.OrderByDescending((res) => res.width * res.height)
+            .Last(); //lowest resolution for fastest resoponse. use .First() for highest
+        
         Texture2D targetTexture = new Texture2D(cameraResolution.width, cameraResolution.height);
 
         // Begin capture process, set the image format    

@@ -1,12 +1,13 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using UnityEngine;
 using UnityEngine.Networking;
+using Newtonsoft.Json;
+
+
 
 public class VisionManager : MonoBehaviour {
 
@@ -81,13 +82,34 @@ public class VisionManager : MonoBehaviour {
             {
                 string jsonResponse = null;
                 jsonResponse = unityWebRequest.downloadHandler.text;
+                //[{
+                //"faceId":"f1f3b05a-1b63-4d77-9ecd-36f11df020c7",
+                //"faceRectangle":{"top":10,"left":312,"width":140,"height":140},
+                //"faceAttributes":{"emotion":{"anger":0.0,"contempt":0.0,"disgust":0.0,"fear":0.0,"happiness":0.392,"neutral":0.607,"sadness":0.0,"surprise":0.0}}}]
 
                 // The response will be in Json format
                 // therefore it needs to be deserialized into the classes AnalysedObject and TagData
-                AnalysedObject analysedObject = new AnalysedObject();
-
-                ResultsLabel.instance.SetTagsToLastLabel(jsonResponse.ToString());
                 
+                Debug.Log(jsonResponse.ToString());
+                List<string> facesIdList = new List<string>();
+                Face_RootObject[] face_RootObject =
+                    JsonConvert.DeserializeObject<Face_RootObject[]>(jsonResponse);
+
+                string outputLabel = "";
+                if (face_RootObject.Length > 0)
+                {
+                    Dictionary<string, object> face = JsonConvert.DeserializeObject<Dictionary<string, object>>(face_RootObject[0].faceAttributes.ToString());
+                    Dictionary<string, double> emotions = JsonConvert.DeserializeObject<Dictionary<string, double>>(face["emotion"].ToString());
+                    
+                    foreach (string emotion in emotions.Keys)
+                    {
+                        string emotionConf = emotions[emotion].ToString();
+                        outputLabel += " " + emotion + ": " + emotionConf;
+
+                        Debug.Log($"Detected emotion {emotion} and confidence {emotions[emotion]}");
+                    }
+                }
+                ResultsLabel.instance.SetTagsToLastLabel(outputLabel);
             }
             catch (Exception exception)
             {
@@ -107,12 +129,4 @@ public class VisionManager : MonoBehaviour {
         BinaryReader binaryReader = new BinaryReader(fileStream);
         return binaryReader.ReadBytes((int)fileStream.Length);
     }
-}
-
-/// <summary>
-/// The Person Face object
-/// </summary>
-public class Face_RootObject
-{
-    public string faceId { get; set; }
 }
