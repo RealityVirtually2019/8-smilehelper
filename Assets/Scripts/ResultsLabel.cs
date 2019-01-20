@@ -1,5 +1,8 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using System.Threading.Tasks;
+
+using static System.TimeSpan;
 
 public class ResultsLabel : MonoBehaviour
 {
@@ -32,17 +35,20 @@ public class ResultsLabel : MonoBehaviour
 
         // Change the text of the label to show that has been placed
         // The final text will be set at a later stage
-        lastLabelPlacedText.text = "Analysing...";
+        lastLabelPlacedText.text = "...";
     }
 
     /// <summary>
     /// Set the Tags as Text of the last Label created. 
     /// </summary>
-    public void SetTagsToLastLabel(string label)
+    public async void SetTagsToLastLabel(string label)
     {
         lastLabelPlacedText = lastLabelPlaced.GetComponent<TextMesh>();
 
         // At this point we go through all the tags received and set them as text of the label
         lastLabelPlacedText.text = label;
+
+        await Task.Delay(System.TimeSpan.FromSeconds(8));
+        lastLabelPlacedText.text = "";
     }
 }

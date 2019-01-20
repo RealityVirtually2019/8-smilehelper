@@ -18,7 +18,7 @@ public class TriggerEvents : ImageCapture {
 
     public void OnCollisionEnter(Collision obj)
     {
-        SetSoundObject(obj.gameObject);
+        //SetSoundObject(obj.gameObject);
         Debug.Log("Collision with " + obj);
     }
 

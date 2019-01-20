@@ -14,17 +14,14 @@ public class ImageCapture : MonoBehaviour {
     private PhotoCapture photoCaptureObject = null;
     private GestureRecognizer recognizer;
     private bool currentlyCapturing = false;
-    public GameObject currentObj;
+    public GameObject buddyObj;
 
     private void Awake()
     {
         // Allows this instance to behave like a singleton
         instance = this;
-    }
 
-    public void SetSoundObject(GameObject obj)
-    {
-        currentObj = obj;
+        buddyObj = GameObject.Find("Buddy");
     }
 
     public void PlaySound(GameObject obj)
@@ -62,7 +59,7 @@ public class ImageCapture : MonoBehaviour {
             ExecuteImageCaptureAndAnalysis();
 
             //CUSTOM TRIGGER EVENTS HERE:
-            PlaySound(currentObj);
+            PlaySound(buddyObj);
         }
     }
 
